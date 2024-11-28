@@ -1,0 +1,222 @@
+@media screen and (max-width: 1000px) {
+   
+    #main-nav {
+        display: none;
+    }
+
+    #mobile-nav {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 1001px) {
+    
+    #main-nav {
+        display: flex;
+    }
+    #mobile-nav {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    
+    .about-section {
+        flex-direction: column-reverse; 
+        height: auto;
+        padding: 8rem 0;
+        gap: 4rem;
+        justify-content: space-around;
+    }
+
+    
+    .profile-img {
+        text-align: center;
+
+    }
+
+    
+    .profile-img img {
+        width: 250px; 
+        height: auto; 
+        margin-bottom: 0;
+        margin-top: 0; 
+    }
+
+    
+    .about-text {
+        margin-bottom: 200px;
+        text-align: center; 
+    }
+
+    .about-text h1 {
+        font-size: 2rem; 
+        margin: 13px 0;
+    }
+
+    .about-text h4 {
+        font-size: 1.5rem; 
+        margin-bottom: 20px;
+    }
+
+    .about-text p {
+        text-align: center;
+        font-size: 1.1rem; 
+    }
+    .cv-btn {
+        flex-direction: column;
+    }
+    .cv-btn a{ 
+        font-size: 15px;
+    }
+    .skills {
+        flex-direction:column;
+        position: static
+    }
+    .skills p{
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+    }
+    .logos ul{
+        margin-top: 15px;
+    }
+
+    /*About Me Section*/
+    #about{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: auto;
+        padding: 4rem 2rem 7rem;
+        
+    }
+    .about-img {
+        text-align: center;
+        margin-top: 60px;
+    }
+    .about-info-content {
+        text-align: center;
+        flex-direction: column;
+    }
+    .about-info-content p{
+        font-size: 1.1rem;
+    }
+    
+    /*Profile Section*/
+
+    #projects{
+        height: auto;
+        padding-left: 1.9rem;
+        margin-bottom: 10rem;   
+    }
+    
+
+    #contact{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-content{
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+    .contact-icons{
+      flex-direction: column;
+    }
+
+
+    .footerc {
+            flex-wrap:wrap-reverse;
+            gap: 4rem;
+            justify-content: center;
+            text-align: center
+    }
+    
+    
+}
+
+@media screen and (max-width: 1200px) {
+    .project-container {
+      grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+      gap: 1rem; /* Maintain spacing between cards */
+    }
+    .ff-row {
+      max-width: 300px; /* Slightly smaller card width */
+      height: auto; /* Allow the height to adjust with content */
+    }
+    .ff-row img {
+      height: 140px; /* Slightly reduce image height */
+    }
+    .row-text h4 {
+      font-size: 16px; /* Reduce title size slightly */
+    }
+    .row-text p {
+      font-size: 13px; /* Smaller description text */
+    }
+  }
+  
+  @media screen and (max-width: 992px) {
+    .project-container {
+      grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+      gap: 1.5rem; /* Increase spacing slightly */
+    }
+    .ff-row {
+      max-width: 280px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .project-container {
+      grid-template-columns: repeat(2, 1fr); /* Still 2 cards per row */
+    }
+    .ff-row img {
+      height: 130px; /* Slightly reduce image size */
+    }
+    .row-text h4 {
+      font-size: 15px;
+    }
+    .row-text p {
+      font-size: 12px;
+    }
+  }
+  
+  @media screen and (max-width: 530px) {
+    .project-container {
+      grid-template-columns: 1fr; /* Stack cards vertically */
+      gap: 2rem; /* Add spacing between stacked cards */
+    }
+    .ff-row {
+      max-width: 100%; /* Allow cards to take full width */
+      padding: 15px; /* Reduce padding for smaller screens */
+    }
+    .ff-row img {
+      height: 120px; /* Reduce image size further */
+    }
+    .row-text h4 {
+      font-size: 14px;
+    }
+    .row-text p {
+      font-size: 11px;
+    }
+    .project-btn {
+      flex-direction: column; /* Stack buttons vertically */
+      align-items: flex-start;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .project-container {
+      gap: 1.5rem; /* Adjust spacing for smaller devices */
+    }
+    .row-text p {
+      font-size: 10px;
+      line-height: 1.4; /* Adjust line height for better readability */
+    }
+    .row-text h5 {
+      font-size: 13px;
+    }
+  }
+  

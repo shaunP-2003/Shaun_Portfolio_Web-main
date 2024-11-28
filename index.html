@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Resources/app-development.png">
+    <title>Shaun Prinsloo | Full Stack Dev</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="media.css"/>
+    <!-- boxicon -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!-- remixicon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"/>
+    <!-- Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="main-nav">
+        <h3 class="logo">Shaun.dev</h3>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <nav id="mobile-nav">
+        <h3 class="logo">Shaun.dev</h3>
+        <div class="mobile-menu">
+            <div class="m-nav-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="mobile-menu-links">
+                <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section class="about-section" id="home">
+        <div class="about-text">
+            <h6>Hello,<span> my name is</span></h6>
+            <h1><span>Shaun</span>  Prinsloo</h1>
+            <h4>I am <span>Full Stack Developer</span></h4>
+            <p>A passionate Front-end and Back-end Developer based in Pretoria, Gauteng.</p>
+        
+            <div class="about-section-ic">
+                <a href="https://www.linkedin.com/in/shaun-prinsloo-58984a233" target="_blank"><i class="ri-linkedin-box-fill"></i></a>
+                <a href="mailto:shaunp279@gmail.com"><i class="ri-mail-fill"></i></a>
+                <a href="https://github.com/shaunP-2003" target="_blank"><i class="ri-github-line"></i></a>
+            </div>
+            <div class="cv-btn">
+                <a onclick="window.open('./Resources/ShaunPrinslooCV.pdf')"
+                    class="btn">Download CV</a> 
+            </div>
+            <div class="skills">
+                <p>Tech Stack</p>
+                <div class="logos">
+                    <ul>
+                        <li><img src="https://skillicons.dev/icons?i=html,css,php" alt="skill-icon"></li>
+                        <li><img src="https://skillicons.dev/icons?i=js,java" alt="skill-icon"></li>
+                    </ul>
+                    <ul>
+                        <li><img src="https://skillicons.dev/icons?i=cs,dotnet,azure" alt="skill-icon"></li>
+                        <li><img src="https://skillicons.dev/icons?i=kotlin,androidstudio,firebase" alt="skill-icon"></li>
+
+                    </ul>
+                </div>
+            </div>   
+        </div>
+         <div class="profile-img">
+            <img src="./Resources/IMG_5443.png">
+         </div>
+    </section>
+    <section class="about-info-section" id="about">
+        <div class="about-img"> 
+            <img src="./Resources/laptop-img.jpg">
+        </div>
+        <div class="about-info-content">
+            <h4>About Me</h4>
+            <p>
+                As a Full Stack Developer, I specialize in both front-end and back-end development.
+                 Skilled in languages like Java, C#, PHP, HTML/CSS, JavaScript, SQL, and Kotlin, 
+                 I excel in crafting sleek user interfaces and ensuring smooth back-end functionality.
+                 I thrive in collaborative environments, delivering innovative solutions that meet client and user needs.</p>                    
+        </div>
+    </section>
+    <section class="projects-section" id="projects">
+        <div class="title">
+            <h2>Portfolio</h2>
+        </div>
+        <div class="project-container">
+            <div class="ff-row">
+                <img src="./Resources/cryotoviz.png">
+                <div class="main-row">
+                    <div class="row-text">
+                        <h4>CryptoViz</h4>
+                        <p>CryptoViz, application that allows users to search and track real-time data and past
+                            performance of various cryptocurrencies. The app provides a user-friendly interface to view
+                            current prices, market capitalizations, and 24-hour changes of popular cryptocurrencies such
+                            as Bitcoin, Ethereum, and more
+                        </p>
+                        <h5>C#  ASP.NET Core MVC  JavaScript (jQuery, AJAX)  HTML  CSS  Bootstrap  RESTful APIs 
+                            Azure App Services  Swaager API Tool</h5>
+                    </div>
+                    <div class="project-btn">
+                        <a href="https://cryptoviz.azurewebsites.net/Crypto/Index" target="_blank">
+                            <p style="font-size: 15px;">Live Demo</p>
+                            <i class="ri-live-line"></i>
+                        </a>
+                        <a href="https://github.com/shaunP-2003/CryptoMarketApi" target="_blank">
+                            <p style="font-size: 15px;">Code</p>
+                            <i class="ri-github-fill"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="ff-row">
+                <img src="./Resources/erics-fish.png">
+                <div class="main-row">
+                    <div class="row-text">
+                        <h4>Eric's Fish Shop</h4>
+                        <p>This website was developed for a small restaurant as
+                             a business solution to attract more customers 
+                             beyond the local area. The primary objective 
+                             for this website is aesthetics.
+                        </p>
+                        <h5>HTML   CSS   JAVASCRIPT</h5>
+                    </div>
+                    <div class="project-btn">
+                        <a href="https://ericsfishshop.netlify.app/" target="_blank">
+                            <p style="font-size: 15px;">Live Demo</p>
+                            <i class="ri-live-line"></i>
+                        </a>
+                        <a href="https://github.com/shaunP-2003/Eric-FishShop_Web" target="_blank">
+                            <p style="font-size: 15px;">Code</p>
+                            <i class="ri-github-fill"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="ff-row">
+                <img src="./Resources/book-bank.jpeg">
+                <div class="main-row">
+                    <div class="row-text">
+                        <h4>The Book Bank</h4>
+                        <p>The Book Bank is a website designed for students to safely trade in 
+                           and purchase used textbooks from their peers. 
+                           This platform provides an interface where students 
+                           can list textbooks they wish to sell, along with a
+                           purchasing system for buying used textbooks.
+                        </p>
+                        <h5>HTML   CSS   PHP   BOOTSTRAP  PHPMYADMIN</h5>
+                    </div>
+                    <div class="project-btn">
+                        <a href="https://youtu.be/52QE9n3WnQo" target="_blank">
+                            <p style="font-size: 15px;">Demo</p>
+                            <i class="ri-live-line"></i>
+                        </a>
+                        <a href="https://github.com/shaunP-2003/The_Book_Bank_Web" target="_blank">
+                            <p style="font-size: 15px;">Code</p>
+                            <i class="ri-github-fill"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="ff-row">
+                <img src="./Resources/flyer-stand-DAF(2).png">
+                <div class="main-row">
+                    <div class="row-text">
+                        <h4>Disaster Alleviation Foundation</h4>
+                        <p>The Disaster Alleviation Foundation Web App
+                            is an app which allows user donate physical goods 
+                            or monetary to a active disaster. The app allows a 
+                            user to add donations and allocate them to all current disasters.
+                        </p>
+                        <h5>C#   .NET(MVC)   AZURE-DB   AZURE-DEVOPS</h5>
+                    </div>
+                <div class="project-btn">
+                    <a href="https://youtu.be/ZEPpGUubobQ" target="_blank">
+                        <p style="font-size: 15px;">Demo</p>
+                        <i class="ri-live-line"></i>
+                    </a>
+                    <a href="https://github.com/shaunP-2003/Disaster-Alleviation-Foundation" target="_blank">
+                        <p style="font-size: 15px;">Code</p>
+                        <i class="ri-github-fill"></i>
+                    </a>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-title">
+                    <p>contact</p>
+                    <h3>Get in touch!</h3>
+                </div>
+                <div class="contact-icons">
+                    <div class="contact-icon-box">
+                        <span>
+                            <i class="ri-map-pin-line"></i>
+                        </span>
+                    <div class="contact-info">
+                        <h3>Location</h3>
+                        <p>Pretoria, South Africa</p>
+                    </div>
+                </div>
+                <div class="contact-icon-box">
+                    <span>
+                        <i class="ri-mail-line"></i>
+                    </span>
+                <div class="contact-info">
+                    <h3>Mail</h3>
+                    <a href="mailto:shaunp279@gmail.com">shaunp279@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footerc">
+                <h3>ShaunP.dev</h3>
+                <div class="footerc__socials">
+                    <a href="https://www.linkedin.com/in/shaun-prinsloo-58984a233" target="_blank"><i class="ri-linkedin-box-fill"></i></a>
+                    <a href="mailto:shaunp279@gmail.com"><i class="ri-mail-fill"></i></a>
+                    <a href="https://github.com/shaunP-2003" target="_blank"><i class="ri-github-line"></i></a> 
+                </a>
+            </div>
+        </div>
+    </div></footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
